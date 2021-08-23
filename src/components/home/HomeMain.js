@@ -1,5 +1,6 @@
 import React from 'react';
-import HomeBottom from './HomeBottom'
+import { Link } from 'react-router-dom';
+import HomeBottom from './HomeBottom';
 import './home.css';
 
 const HomeMain = () => {
@@ -59,19 +60,22 @@ const HomeMain = () => {
         <main>
             <div id = 'top-section'>
                 <h2>Your favorite food, delivered while coding</h2>
-                <button>Pizza?</button>
+                <Link to = '/pizza'>
+                    <button>Pizza?</button>
+                </Link>
             </div>
             <div id = 'bottom-section'>
                 {
-                    restaurants.map(restaurant => {
-                        <HomeBottom 
-                            key = { restaurant.id }
-                            img = { restaurant.img }
-                            name = { restaurant.name }
-                            description = { restaurant.description }
-                            time = { restaurant.time }
-                            fee = { restaurant.fee }
-                        />
+                    restaurants.map(restaurant =>   {
+                        return (
+                            <div className = 'wrap'>
+                                <img src = { restaurants.img } alt = 'restaurant' />
+                                <h3>{ restaurants.name }</h3>
+                                <p>{ restaurants.description }</p>
+                                <p>{ restaurants.time }</p>
+                                <p>{ restaurants.fee }</p>
+                            </div>
+                        )
                     })
                 }
             </div>

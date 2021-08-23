@@ -1,12 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const HomeHeader = () => {
+const Header = () => {
     
     return (
         <header>
             <h3>Lambda Eats</h3>
             <nav>
-                <button>Home</button>
+                <Link to = '/'>
+                    <button>Home</button>
+                </Link>
                 <button>Help</button>
             </nav>
         </header>
@@ -14,4 +17,4 @@ const HomeHeader = () => {
 
 }
 
-export default HomeHeader;
+export default Header;

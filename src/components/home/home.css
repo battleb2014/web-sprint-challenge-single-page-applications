@@ -192,7 +192,7 @@ main h2 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 50%;
+	height: 50rem;
 	width: 100%;
 	border: 1px solid black;
 	color: red;
@@ -200,11 +200,16 @@ main h2 {
 
 #bottom-section {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	height: 50%;
 	width: 100%;
 	border: 1px solid black;
 	color: blue;
+}
+
+.wrap {
+	display: flex;
+	height: 10rem;
+	width: 10rem;
+	border: 1px solid black;
 }

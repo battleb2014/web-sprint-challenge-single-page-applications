@@ -1,11 +1,13 @@
 import React from 'react';
 
-const OrderForm = () => {
+const OrderComplete = () => {
 
     return (
         <div>
-            
+
         </div>
     )
 
 }
+
+export default OrderComplete;

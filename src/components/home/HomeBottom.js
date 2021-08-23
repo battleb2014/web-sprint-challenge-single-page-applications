@@ -2,15 +2,15 @@ import React from 'react';
 
 const HomeBottom = (props) => {
     
-    const { img, name, description, time, fee } = props;
+    const { restaurants } = props;
 
     return (
         <div>
-            <img src = { img } alt = 'restaurant' />
-            <h3>{ name }</h3>
-            <p>{ description }</p>
-            <p>{ time }</p>
-            <p>{ fee }</p>
+            <img src = { restaurants.img } alt = 'restaurant' />
+            <h3>{ restaurants.name }</h3>
+            <p>{ restaurants.description }</p>
+            <p>{ restaurants.time }</p>
+            <p>{ restaurants.fee }</p>
         </div>
     )
 
